@@ -1,0 +1,29 @@
+<div class="page-container">     
+    <div class="sidebar">
+        <div class="list-items">
+            <a routerLink="/home" routerLinkActive="selected" class="list-item">
+                <span> item 1 </span> 
+                <fa-icon [icon]="home"></fa-icon>
+                
+            </a>
+            <a routerLink="/profile" routerLinkActive="selected" class="list-item">
+                <span> item 2 </span> 
+                <fa-icon [icon]="user"></fa-icon>
+                
+            </a>
+            <a class="list-item">
+                <span> item 3 </span> 
+                <fa-icon [icon]="envelope"></fa-icon>
+                
+            </a>
+            <a class="list-item">
+                <span> item 4 </span> 
+                <fa-icon [icon]="stickyNote"></fa-icon>
+            </a>
+        </div>
+    </div>
+
+    <div class="page-content-container">
+        <router-outlet></router-outlet>
+    </div>
+</div>

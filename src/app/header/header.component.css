@@ -1,0 +1,78 @@
+.page-container{
+    height:100%;
+    background:rgba(35, 42, 58);
+    position: relative;
+    display:flex;
+}
+
+.page-content-container{
+    padding:50px;
+}
+
+
+a{
+    text-decoration:none;
+}
+
+.sidebar{
+    height:100%;
+    width:300px;
+    position: absolute;
+    background:rgba(0,0,0,0.2);
+    top: 0;
+    right: 0;
+    padding: 0;
+    text-align: center;
+    
+}
+
+.list-items{
+    padding-top:100px;   
+}
+
+.list-items .list-item{
+    font-size:20px;
+    color:rgba(255, 255, 255, 0.9);
+    padding:10px 20px;
+    display:flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.list-items .list-item:hover{
+    color:white;
+}
+
+.list-items .list-item.selected{
+   color:white;
+}
+
+.list-items .list-item::before{
+    position: absolute;
+    content: '';
+    top: 0;
+    right:0;
+    height:100%;
+    width:5px;
+    background-color:orange ;
+    opacity: 0;
+    transform:scaleY(0);
+    transition: transform 0.2s, opacity 0.2s;
+}
+
+.list-item:hover::before{
+    opacity: 0.5;
+    transform:scaleY(0.5) scaleX(2);
+    background:red;
+}
+
+.list-items .list-item.selected::before{
+    opacity: 1;
+    transform:scaleY(1);
+}
+
+.list-items .list-item fa-icon{
+    padding-left:20px;
+    font-size:19px;
+}
