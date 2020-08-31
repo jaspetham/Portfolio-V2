@@ -1,7 +1,5 @@
 .page-container{
-    height:100%;
     background:rgba(35, 42, 58);
-    display:flex;
 }
 
 .page-content-container{
@@ -99,10 +97,8 @@ fa-icon{
 }
 
 .list-text{
+    visibility: hidden;
     position: absolute;
-    opacity:0;
-    transform:scaleX(0.5);
-    transition: transform 0.5s;
 }
 
 .list-text span{
@@ -111,14 +107,26 @@ fa-icon{
 }
 
 .circle-box:hover > .list-text{
-    opacity: 1;
+    visibility: visible;
     position: absolute;
-    transform: scaleX(1);
     z-index:-1;
     top:0;
     right:0;
     padding: 0 40px 0 0px;
     height:50px;
-    background:orange;
+    background-color:orange;
+    transition: padding 0.4s ease-in-out;
     border-radius: 30px;
+}
+
+#content{
+    width:100%;
+    padding:20px;
+    min-height:100vh;
+}
+
+@media (max-width:768px){
+   .sidebar{
+       display: none;
+   }
 }

@@ -17,7 +17,6 @@ export class HeaderComponent implements OnInit {
   briefcase = faBriefcase;
   envelope = faEnvelope;
   stickyNote = faStickyNote;
-
   constructor() { }
 
   ngOnInit(): void {

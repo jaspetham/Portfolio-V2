@@ -20,3 +20,13 @@
 .home .home-detail > div{
     max-width:600px;
 }
+
+@media(max-width:768px){
+    .main-img-mobile{
+        height:150px;
+    }
+
+    .home .home-detail{
+        padding-left: 0;
+    }
+}
