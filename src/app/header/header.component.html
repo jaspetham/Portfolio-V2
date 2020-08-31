@@ -1,26 +1,35 @@
 <div class="page-container">     
     <div class="sidebar">
-        <div class="list-items">
-            <a routerLink="/home" routerLinkActive="selected" class="list-item">
-                <span> item 1 </span> 
-                <fa-icon [icon]="home"></fa-icon>
+        <ul class="list-items list-inline">
+            <li class="list-inline-item">
+                <a routerLink="/home" routerLinkActive="selected" class="list-item  circle-box">
+                    <div class="list-text">
+                        <span>Home</span>
+                    </div>
+                    <fa-icon [icon]="home" transform="left-4.5"></fa-icon>
+                    
+                </a>
                 
-            </a>
-            <a routerLink="/profile" routerLinkActive="selected" class="list-item">
-                <span> item 2 </span> 
-                <fa-icon [icon]="user"></fa-icon>
-                
-            </a>
-            <a class="list-item">
-                <span> item 3 </span> 
-                <fa-icon [icon]="envelope"></fa-icon>
-                
-            </a>
-            <a class="list-item">
-                <span> item 4 </span> 
-                <fa-icon [icon]="stickyNote"></fa-icon>
-            </a>
-        </div>
+            </li>
+
+            <li class="list-inline-item">
+                <a routerLink="/profile" routerLinkActive="selected" class="list-item circle-box">
+                    <div class="list-text">
+                        <span>Profile</span>
+                    </div>
+                    <fa-icon [icon]="user" transform="left-3"></fa-icon>
+                </a>
+            </li>
+
+            <li class="list-inline-item">
+                <a routerLink="/skills" routerLinkActive="selected" class="list-item circle-box">
+                    <div class="list-text">
+                        <span>Skills</span>
+                    </div>
+                    <fa-icon [icon]="envelope" transform="left-3"></fa-icon>
+                </a>
+            </li>
+        </ul>
     </div>
 
     <div class="page-content-container">

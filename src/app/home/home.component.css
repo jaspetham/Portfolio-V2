@@ -1,0 +1,22 @@
+.home .home-container{
+    width:100%;
+    height:100vh;
+}
+
+.home .bigImage{
+    background-image:url('https://jaspertham.com/img/me.png') ;
+    background-size:cover;
+    background-repeat: no-repeat;
+    height:calc(90vh - 60px);
+    z-index:111;
+    border-radius: 15px;
+}
+
+
+.home .home-detail{
+    padding-left:150px;
+}
+
+.home .home-detail > div{
+    max-width:600px;
+}
