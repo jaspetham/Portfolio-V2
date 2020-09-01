@@ -7,6 +7,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 2. For reference on how to use font awesome icon angular - https://www.angularjswiki.com/angular/how-to-use-font-awesome-icons-in-angular-applications/
 3. For reference on how to make sidebar - https://www.youtube.com/watch?v=5uC5vdjifE4
 4. For the active class of mobile menu nav-item link - https://stackoverflow.com/questions/24514717/bootstrap-navbar-active-state-not-working
+5. For ciruclar progress bar - https://github.com/bootsoon/ng-circle-progress
 
 ## Development server
 
