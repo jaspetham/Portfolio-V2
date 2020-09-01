@@ -4,7 +4,7 @@
 }
 
 .home .color-block{
-    background-color:#ffb400;
+    background-color:var(--primary-color);
     position: fixed;
     height: 200%;
     width: 100%;
@@ -45,7 +45,7 @@
     line-height: 45px;
     font-weight: 700;
     margin:18px 0 10px;
-    color:#ffb400;
+    color:var(--primary-color);
 }
 
 .home .home-detail p{
@@ -54,8 +54,8 @@
     line-height: 32px;
 }
 
-.home .home-detail .btn-about{
-    background-color: #ffb400;
+.home .home-detail .custom-btn{
+    background-color: var(--primary-color);
     color:white;
     text-decoration:none;
     padding: 0 40px;
@@ -64,6 +64,33 @@
     font-weight: 500;
     border-radius: 26px;
     text-transform: uppercase;
+}
+
+@media(min-width:992px){
+    .btn.custom-btn:before{
+        content: "\f019";
+    }
+    .home-detail .btn:hover span{
+        position: relative;
+        display: block;
+        transform: translateX(-10px);
+        transition: transform 0.3s;
+    }
+    .home-detail .custom-btn:before{
+        font-family: 'FontAwesome';
+        color: #fff;
+        position: absolute;
+        transition: all 0.3s;
+        opacity: 0;
+        left:290px;
+        margin-top:1px;
+        -webkit-transform: translateX(-20px);
+        transform: translateX(-20px);
+    }
+
+    .home-detail .custom-btn:hover::before{
+        opacity: 1;
+    }
 }
 
 @media(max-width:768px){

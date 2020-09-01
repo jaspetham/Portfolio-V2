@@ -1,3 +1,7 @@
+@import url(_variable.css);
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&display=swap');
+@import "~font-awesome/css/font-awesome.css";
+
 /* You can add global styles to this file, and also import other style files */
 html,body{
     height:100%;
@@ -6,8 +10,21 @@ html,body{
 
 h1,h2,h3,h4,h5,h6{
     color:white;
+    font-family: var(--primary-font);
+    
 }
 
 p{
     color:white;
+    font-family: var(--secondary-font);
 }
+
+span{
+    color:white;
+}
+
+.circle-percent{
+    height:150px;
+    width:100%;
+}
+

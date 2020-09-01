@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import {faDownload} from '@fortawesome/free-solid-svg-icons'
 @Component({
   selector: 'app-profile',
   templateUrl: './profile.component.html',
@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProfileComponent implements OnInit {
 
+  download = faDownload;
   constructor() { }
 
   ngOnInit(): void {
