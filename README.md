@@ -2,6 +2,12 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.5.
 
+## Link Reference
+1. For reference on how to create a sidebar menu full page - https://bootstrap-menu.com/demos/offcanvas-collapse.html#
+2. For reference on how to use font awesome icon angular - https://www.angularjswiki.com/angular/how-to-use-font-awesome-icons-in-angular-applications/
+3. For reference on how to make sidebar - https://www.youtube.com/watch?v=5uC5vdjifE4
+4. For the active class of mobile menu nav-item link - https://stackoverflow.com/questions/24514717/bootstrap-navbar-active-state-not-working
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.

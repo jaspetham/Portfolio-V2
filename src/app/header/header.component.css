@@ -1,5 +1,5 @@
 .page-container{
-    background:rgba(35, 42, 58);
+    background:#111;
 }
 
 .page-content-container{
@@ -18,7 +18,7 @@ a{
     z-index: 3;
 }
 
-ul{
+.sidebar ul{
     z-index: 1;
     top: 0;
     bottom: 0;
@@ -32,8 +32,6 @@ ul{
     flex-wrap:wrap;
     justify-content:center;
 }
-
-
 
 .list-items .circle-box{
     width: 50px;
@@ -92,8 +90,7 @@ ul{
 } */
 
 fa-icon{
-    font-size: 22px;
-    padding-left:-200px;
+    font-size: 18px;
 }
 
 .list-text{
@@ -104,6 +101,7 @@ fa-icon{
 .list-text span{
     line-height:50px;
     padding:0 20px;
+    font-size:15px;
 }
 
 .circle-box:hover > .list-text{
@@ -129,4 +127,40 @@ fa-icon{
    .sidebar{
        display: none;
    }
+
+   .navbar-collapse {
+     position: fixed;
+     top:0; 
+     bottom:0;
+     right:100%;
+     width: 100%;
+     padding-right: 1rem;
+     padding-left: 1rem;
+     overflow-y: auto;
+     visibility: hidden;
+     z-index: 1;
+     background-color: black;
+     transition: visibility .5s ease-in-out, transform .5s ease-in-out;
+   }
+   .navbar-collapse.show {
+     visibility: visible;
+     transform: translateX(100%);
+   }
+
+   .navbar-nav{
+        padding-top:100px;
+   }
+
+   .navbar-nav li{
+       padding-bottom: 15px;
+   }
+
+   .nav-link{
+       border-bottom: 0.5px solid rgba(211, 211, 211, .2);
+   }
+
+   .navbar-nav > li:last-child a{
+       border:none;
+   }
+
 }

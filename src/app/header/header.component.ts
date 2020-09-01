@@ -5,6 +5,7 @@ import {faUser} from '@fortawesome/free-solid-svg-icons'
 import {faBriefcase} from '@fortawesome/free-solid-svg-icons'
 import {faEnvelope} from '@fortawesome/free-solid-svg-icons'
 import {faStickyNote} from '@fortawesome/free-solid-svg-icons'
+import * as $ from 'jquery';
 
 @Component({
   selector: 'app-header',
@@ -20,6 +21,22 @@ export class HeaderComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    $(document).ready(function() {
+      $('li.active').removeClass('active');
+      $('a[href="' + location.pathname + '"]').closest('li').addClass('active'); 
+    });
+    
+    $("[data-trigger]").on("click", function(){
+      var trigger_id =  $(this).attr('data-trigger');
+      $(trigger_id).toggleClass("show");
+      $('body').toggleClass("offcanvas-active");
+    });
+    
+    // close button 
+    $(".btn-close").click(function(e){
+        $(".navbar-collapse").removeClass("show");
+        $("body").removeClass("offcanvas-active");
+    }); 
   }
 
 }

@@ -31,18 +31,34 @@
         </ul>
     </nav>
 
+   
+    <nav class="navbar navbar-expand-lg navbar-dark d-md-none">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Jasper Tham</a>
+            <button class="navbar-toggler" type="button" data-trigger="#main_nav">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="navbar-collapse" id="main_nav">
+                <div class="offcanvas-header mt-3">  
+                  <button class="btn btn-outline-danger btn-close float-right">Close</button>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li class="nav-item active">
+                       <a class="nav-link" href="/home">Home</a> 
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/profile">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                </ul>
+              </div> 
+        </div>
+    </nav>
     <div id="content">
-        <nav class="navbar navbar-expand-lg navbar-light d-md-none">
-            <div class="container-fluid">
-    
-                <button type="button" id="sidebarCollapse" class="btn btn-info">
-                    <i class="fas fa-align-left"></i>
-                    <span>Toggle Sidebar</span>
-                </button>
-    
-            </div>
-        </nav>
-
+       
+       
         <div class="page-content-container">
             <router-outlet></router-outlet>
         </div>
