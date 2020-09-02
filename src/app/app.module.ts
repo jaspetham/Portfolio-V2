@@ -10,6 +10,7 @@ import { ProfileComponent } from './profile/profile.component';
 import {NgCircleProgressModule} from 'ng-circle-progress';
 import { WorksComponent } from './works/works.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -41,7 +42,6 @@ import { WorksComponent } from './works/works.component';
       "responsive": true,
       "class": "circle-percent"
     })
-
   ],
   providers: [],
   bootstrap: [AppComponent]
