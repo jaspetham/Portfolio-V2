@@ -163,4 +163,12 @@ fa-icon{
        border:none;
    }
 
+
+   #mobileNav{
+       background-color:#252525;
+   }
+   #content{
+       padding-top:80px;
+   }
+
 }

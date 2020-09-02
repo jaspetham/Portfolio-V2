@@ -90,6 +90,81 @@ hr.line{
     font-size: 22px;
     padding:30px 0;
 }
+
+.resu-edu-container{
+    width:100%;
+}
+
+.resu-edu-container .icon{
+    width:40px;
+    height:40px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    line-height: 40px;
+    text-align: center;
+    z-index: 1;
+    border-radius: 50%;
+    color: #fff;
+    background-color: var(--primary-color);
+}
+
+.resu-edu-container .small-text{
+    color:white;
+    font-size:12px;
+    padding:1px 10px;
+    display: inline-block;
+    margin-bottom:12px;
+    border-radius: 20px;
+    font-weight: 600;
+    background-color: #252525;
+}
+
+.resu-edu-container .resu-edu-title{
+    font-size:18px;
+    margin:7px 0 10px;
+}
+
+.resu-edu-container .resu-edu-subtitle{
+    opacity: .8;
+    font-weight: 600;
+    font-size: 15px;
+    position: relative;
+    padding-left: 26px;
+}
+
+.resu-edu-container .resu-edu-subtitle:before{
+    position: absolute;
+    content: '';
+    width: 10px;
+    height: 2px;
+    background-color: #fff;
+    left: 7px;
+    top: 9px;
+    opacity: .8;
+}
+
+.resu-edu-container .resu-edu-p{
+    font-size:14px;
+    color:white;
+    margin:0;
+}
+
+
+.resu-edu-container li:after{
+    content:"";
+    position: absolute;
+    top:0;
+    left:20px;
+    bottom:0;
+    border-left:1px solid #333;
+}
+
+.resu-edu-container li{
+    position: relative;
+    padding: 0 20px 0 60px;
+    margin: 0 0 50px;
+}
 @media(min-width:992px){
     .btn.custom-btn:before{
         content: "\f019";
@@ -142,5 +217,16 @@ hr.line{
     .profile-content .circle-title{
         font-size: 14px;
         padding:0;
+    }
+
+    .resu-edu-container .profile-title{
+        font-size:18px;
+    }
+    .resu-edu-container .resu-edu-title{
+        font-size:14px;
+    }
+
+    .resu-edu-container .resu-edu-p{
+        font-size:14px;
     }
 }

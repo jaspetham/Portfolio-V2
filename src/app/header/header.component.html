@@ -21,18 +21,18 @@
             </li>
 
             <li class="list-inline-item">
-                <a routerLink="/skills" routerLinkActive="selected" class="list-item circle-box">
+                <a routerLink="/works" routerLinkActive="selected" class="list-item circle-box">
                     <div class="list-text">
-                        <span>Skills</span>
+                        <span>Projects</span>
                     </div>
-                    <fa-icon [icon]="envelope" transform="left-3"></fa-icon>
+                    <fa-icon [icon]="briefcase" transform="left-3"></fa-icon>
                 </a>
             </li>
         </ul>
     </nav>
 
    
-    <nav class="navbar navbar-expand-lg navbar-dark d-md-none">
+    <nav class="navbar navbar-expand-lg navbar-dark d-md-none fixed-top" id="mobileNav">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Jasper Tham</a>
             <button class="navbar-toggler" type="button" data-trigger="#main_nav">
@@ -50,7 +50,7 @@
                         <a class="nav-link" href="/profile">Profile</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Services</a>
+                        <a class="nav-link" href="/works">My Works</a>
                     </li>
                 </ul>
               </div> 
