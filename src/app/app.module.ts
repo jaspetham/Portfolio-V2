@@ -1,3 +1,4 @@
+import { RouterModule, Routes } from '@angular/router';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -11,6 +12,9 @@ import {NgCircleProgressModule} from 'ng-circle-progress';
 import { WorksComponent } from './works/works.component';
 import { ContactComponent } from './contact/contact.component';
 
+const routes: Routes = [
+
+];
 
 @NgModule({
   declarations: [
@@ -22,8 +26,9 @@ import { ContactComponent } from './contact/contact.component';
     ContactComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
+    RouterModule.forRoot(routes,{useHash:true}),
     FontAwesomeModule,
 
     NgCircleProgressModule.forRoot({

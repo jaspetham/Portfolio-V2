@@ -13,7 +13,7 @@ a{
 .sidebar{
     height:100%;
     position: fixed;
-    right: 30px;
+    right: 10px;
     padding: 0;
     z-index: 3;
 }
@@ -146,6 +146,10 @@ fa-icon{
      visibility: visible;
      transform: translateX(100%);
    }
+
+    .nav-item .selected{
+       color:var(--primary-color);
+    }
 
    .navbar-nav{
         padding-top:100px;

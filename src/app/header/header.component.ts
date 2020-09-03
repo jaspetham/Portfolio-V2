@@ -23,12 +23,7 @@ export class HeaderComponent implements OnInit {
   
   constructor() { }
 
-  ngOnInit(): void {
-    $(document).ready(function() {
-      $('li.active').removeClass('active');
-      $('a[href="' + location.pathname + '"]').closest('li').addClass('active'); 
-    });
-    
+  ngOnInit(): void {  
     $("[data-trigger]").on("click", function(){
       var trigger_id =  $(this).attr('data-trigger');
       $(trigger_id).toggleClass("show");
@@ -39,7 +34,12 @@ export class HeaderComponent implements OnInit {
     $(".btn-close").click(function(e){
         $(".navbar-collapse").removeClass("show");
         $("body").removeClass("offcanvas-active");
-    }); 
+    });
+     
+    $(".nav-link").click(function(e){
+      $(".navbar-collapse").removeClass("show");
+      $("body").removeClass("offcanvas-active");
+  });
   }
 
 }
