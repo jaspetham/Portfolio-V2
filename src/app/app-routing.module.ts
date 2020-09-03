@@ -1,3 +1,4 @@
+import { ContactComponent } from './contact/contact.component';
 import { WorksComponent } from './works/works.component';
 import { ProfileComponent } from './profile/profile.component';
 import { HomeComponent } from './home/home.component';
@@ -20,6 +21,9 @@ const routes: Routes = [
       },
       {
         path: 'works', component:WorksComponent
+      },
+      {
+        path: 'contact', component:ContactComponent
       },
       {
         path:'**', component:HomeComponent

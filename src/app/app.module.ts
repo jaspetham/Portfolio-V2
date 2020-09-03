@@ -9,6 +9,7 @@ import { HomeComponent } from './home/home.component';
 import { ProfileComponent } from './profile/profile.component';
 import {NgCircleProgressModule} from 'ng-circle-progress';
 import { WorksComponent } from './works/works.component';
+import { ContactComponent } from './contact/contact.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { WorksComponent } from './works/works.component';
     HeaderComponent,
     HomeComponent,
     ProfileComponent,
-    WorksComponent
+    WorksComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

@@ -5,6 +5,7 @@ import {faUser} from '@fortawesome/free-solid-svg-icons'
 import {faBriefcase} from '@fortawesome/free-solid-svg-icons'
 import {faEnvelope} from '@fortawesome/free-solid-svg-icons'
 import {faStickyNote} from '@fortawesome/free-solid-svg-icons'
+import {faAddressBook} from '@fortawesome/free-solid-svg-icons'
 import * as $ from 'jquery';
 
 @Component({
@@ -18,6 +19,8 @@ export class HeaderComponent implements OnInit {
   briefcase = faBriefcase;
   envelope = faEnvelope;
   stickyNote = faStickyNote;
+  contact = faAddressBook;
+  
   constructor() { }
 
   ngOnInit(): void {
