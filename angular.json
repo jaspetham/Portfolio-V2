@@ -49,6 +49,7 @@
               "src/assets"
             ],
             "styles": [
+              "src/styles-app-loading.scss",
               "src/styles.css",
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/assets/js/jquery.hoverdir.js"
