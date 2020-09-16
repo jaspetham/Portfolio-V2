@@ -41,6 +41,7 @@
 .contact-box .contact-text{
     margin-bottom:15px;
     font-size:15px;
+    text-align: justify;
 }
 .contact-box .contact-icon{
     font-weight:  600;
