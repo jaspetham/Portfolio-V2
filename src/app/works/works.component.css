@@ -1,46 +1,43 @@
-.title-container{
-    margin:0;
-    width:100%;
-    position: relative;
-    padding:80px 0;
+.title-container {
+  margin: 0;
+  width: 100%;
+  position: relative;
+  padding: 80px 0;
 }
-.title-container h1{
-    color:white;
-    font-size:56px;
-    text-transform: uppercase;
-    margin:0;
-    font-weight: 900;
-    font-family: var(--default-font);
-}
-
-.title-container span{
-    color:var(--primary-color);
+.title-container h1 {
+  color: white;
+  font-size: 56px;
+  text-transform: uppercase;
+  margin: 0;
+  font-weight: 900;
+  font-family: var(--default-font);
 }
 
-.title-container .title-bg{
-    font-size:110px;
-    left:0;
-    right:0;
-    position: absolute;
-    transform:translateY(-50%);
-    top:50%;
-    letter-spacing: 10px;
-    line-height: 0.7;
-    text-transform: uppercase;
-    font-weight: 800;
-    color:rgba(255,255,255,0.07);
+.title-container span {
+  color: var(--primary-color);
 }
 
+.title-container .title-bg {
+  font-size: 110px;
+  left: 0;
+  right: 0;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  letter-spacing: 10px;
+  line-height: 0.7;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: rgba(255, 255, 255, 0.07);
+}
 
-
-
-@media(min-width:992px){
-  ul{
+@media (min-width: 992px) {
+  ul {
     position: relative;
     height: 719.064px;
   }
 
-  .da-thumbs li{
+  .da-thumbs li {
     width: 33.333333%;
     float: left;
     cursor: pointer;
@@ -51,8 +48,8 @@
   .da-thumbs li a img {
     display: block;
     position: relative;
-    width:100%;
-    height:100%;
+    width: 100%;
+    height: 100%;
   }
   .da-thumbs li a {
     overflow: hidden;
@@ -61,14 +58,14 @@
   .da-thumbs li a div {
     position: absolute;
     background: #333;
-    background: rgba(75,75,75,0.7);
+    background: rgba(75, 75, 75, 0.7);
     width: 100%;
     height: 100%;
   }
   .da-thumbs li a div.custom-hover-object {
     position: absolute;
     background: #333;
-    background: rgba(255,255,255,0.7);
+    background: rgba(255, 255, 255, 0.7);
     width: 100%;
     height: 100%;
   }
@@ -77,70 +74,70 @@
     padding-top: 30px;
     margin: 50px 20px 10px 20px;
     text-transform: uppercase;
-    font-size:22px;
+    font-size: 22px;
     text-align: center;
     font-weight: normal;
-    color: rgba(255,255,255,0.9);
-    text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
-    border-bottom: 1px solid rgba(255,255,255,0.5);
+    color: rgba(255, 255, 255, 0.9);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   }
 
   .da-thumbs li a div.custom-hover-object span {
-    color: rgba(75,75,75,0.9);
-    text-shadow: 1px 1px 1px rgba(255,255,255,0.2);
-    border-bottom: 1px solid rgba(0,0,0,0.5);
-    box-shadow: 0 1px 0 rgba(255,255,255,255.1), 0 -10px 0 rgba(0,0,0,0.3);
+    color: rgba(75, 75, 75, 0.9);
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 255.1), 0 -10px 0 rgba(0, 0, 0, 0.3);
   }
 
-  .da-thumbs li section{
-    padding:10px 30px;
+  .da-thumbs li section {
+    padding: 10px 30px;
   }
 
-  .da-thumbs li a div p{
-    font-size:13px;
-    margin-bottom:5px;
+  .da-thumbs li a div p {
+    font-size: 13px;
+    margin-bottom: 5px;
   }
-  .da-thumbs li a div .btn{
-    width:50%;
-    height:100%;
-    display:inline-block;
-  }
-
-  .da-thumbs li a div .btn-solo{
-    width:100%;
-    height:100%;
-    display:inline-block;
+  .da-thumbs li a div .btn {
+    width: 50%;
+    height: 100%;
+    display: inline-block;
   }
 
-  .da-thumbs li a div .btn-info{
-    background-color:var(--primary-color);
-    border:none;
+  .da-thumbs li a div .btn-solo {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+  }
+
+  .da-thumbs li a div .btn-info {
+    background-color: var(--primary-color);
+    border: none;
   }
 }
 
-@media(max-width:720px){
-  .da-thumbs div{
-    padding:10px 20px;
+@media (max-width: 720px) {
+  .da-thumbs div {
+    padding: 10px 20px;
   }
 
-  .da-thumbs span{
-    font-size:18px;
+  .da-thumbs span {
+    font-size: 18px;
     font-weight: 600;
   }
 
-  .da-thumbs section .btn{
-    margin:10px 0;
+  .da-thumbs section .btn {
+    margin: 10px 0;
   }
 
-  .da-thumbs section #btn-left{
-    margin-right:10px;
+  .da-thumbs section #btn-left {
+    margin-right: 10px;
   }
-  .da-thumbs section #btn-right{
-    margin-left:10px;
+  .da-thumbs section #btn-right {
+    margin-left: 10px;
   }
 
-  .da-thumbs li a div p{
-    font-size:12px;
-    margin:0px;
+  .da-thumbs li a div p {
+    font-size: 12px;
+    margin: 0px;
   }
 }
